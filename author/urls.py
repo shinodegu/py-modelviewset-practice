@@ -7,7 +7,7 @@ app_name = "author"
 
 router = routers.DefaultRouter()
 
-router.register(r"author", AuthorViewSet)
+router.register(r"author", AuthorViewSet, basename="manage")
 urlpatterns = [
     path("", include(router.urls)),
 ]
